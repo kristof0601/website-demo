@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo Landing — Dein Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Modern, schnell & bereit zum Deploy</h1>
+      <p>Landingpage Demo — sofort einsatzbereit.</p>
+      <a class="btn" href="#contact">Kontakt</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="features">
+      <article>
+        <h2>Schnell</h2>
+        <p>Static Hosting, super Ladezeiten.</p>
+      </article>
+      <article>
+        <h2>Skalierbar</h2>
+        <p>Serverless oder Server — du entscheidest.</p>
+      </article>
+      <article>
+        <h2>Einfach deployen</h2>
+        <p>Vercel, Netlify, GitHub Pages — ein Klick.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Kontakt</h2>
+      <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST">
+        <label>
+          Name
+          <input name="name" required />
+        </label>
+        <label>
+          E-Mail
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Nachricht
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Absenden</button>
+      </form>
+      <p id="status"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© Dein Name — Demo</div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
