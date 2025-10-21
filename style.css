@@ -1,0 +1,16 @@
+:root{ --bg:#0f1724; --card:#0b1220; --accent:#4f46e5; --muted:#9aa4b2; --max:1000px; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial;background:linear-gradient(180deg,#071020 0%, #081426 100%);color:#e6eef6;line-height:1.45}
+.container{max-width:var(--max);margin:0 auto;padding:24px}
+.hero{padding:80px 0;text-align:center;background:linear-gradient(90deg, rgba(79,70,229,0.12), rgba(0,0,0,0));}
+.hero h1{font-size:2.25rem;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;background:var(--accent);color:white;padding:10px 18px;border-radius:8px;text-decoration:none}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:36px 0}
+.features article{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px}
+.contact{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+label{display:block;margin-bottom:10px;color:var(--muted)}
+input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+button{background:var(--accent);color:white;padding:10px 16px;border-radius:8px;border:none}
+.footer{padding:18px;text-align:center;color:var(--muted);margin-top:36px}
+@media(min-width:900px){ .hero h1{font-size:3rem} }
